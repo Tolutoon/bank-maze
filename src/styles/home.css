@@ -1,0 +1,29 @@
+.home-container {
+    display: flex;
+    padding: 68px 130px;
+    gap: 185px;
+    max-width: 1350px;
+}
+
+
+h1 {
+    font-size: 72px;
+}
+
+.hero-text {
+    min-width: 499px;
+}
+
+.hero-box {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 56px;
+    align-items: flex-start;
+}
+
+.home-container .hero-image {
+    width: 446.114px;
+    height: 552.38px;
+    flex-shrink: 0;
+}

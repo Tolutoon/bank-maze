@@ -1,13 +1,19 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    padding: 32px 152px;
+    padding: 16px 130px;
     justify-content: space-between;
     align-items: center;
     background: #FFF;
-    box-shadow: 0px -1px 0px 0px #B2B2B2 inset;
+    box-shadow: 0px -1px 0px 0px #b2b2b25b inset;
+    min-width: 900px;
 }
 
+
+.main-logo {
+    width: 166px;
+    height: 45px;
+}
 
 ul {
     display: flex;
@@ -23,9 +29,63 @@ ul {
 li {
     margin: 10px;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
 }
 
-.logo {
-    width: 166px;
-    height: 45px;
+li .link {
+    color: gray;
+    text-decoration: none;
+}
+
+li .link:hover{
+    color: #bfbfbf;
+}
+
+
+button {
+    margin: 16px;
+}
+
+.btn {
+    display: flex;
+}
+
+
+.btn .login-btn {
+    display: flex;
+    height: 40px;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    border: 1px solid #393939;
+    background-color: #fff;
+    font-size: 12px;
+    &:hover{
+        opacity: 50%;
+    }
+}
+
+.btn .signup-btn {
+    display: flex;
+    height: 40px;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #F6FD89;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    &:hover{
+        opacity: 80%;
+}
+
 }

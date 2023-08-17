@@ -3,6 +3,9 @@ import Navbar from "../components/Navbar";
 import "../styles/home.css";
 import Nike from '../assets/Nike - png 0.png';
 import ASOS from '../assets/ASOS - png 0.png';
+import AirBnB from '../assets/Airbnb - png 0.png';
+import Uber from '../assets/Uber - png 0.png';
+import Spotify from '../assets/Spotify - png 0.png';
 import Hero from "../assets/hero-image.jpg";
 
 function Home() {
@@ -24,8 +27,9 @@ function Home() {
           <div>
             <button className="hero-btn">
               <div className="btn-text">
-              Get The App
+              <strong style={{color: 'gray'}}>Get The App</strong>
               <svg
+              className="arrow"
                 width="42"
                 height="42"
                 viewBox="0 0 42 42"
@@ -48,10 +52,14 @@ function Home() {
           <img className="hero-image" src={Hero} alt="" />
         </div>
       </div>
-      <div className="trsted-logos">
+      <div className="trusted-logos">
         <img src={Nike} alt=""/>
         <img src={ASOS} alt=""/>
+        <img src={AirBnB} alt=""/>
+        <img src={Spotify} alt=""/>
+        <img src={Uber} alt=""/>
       </div>
+      <div className="section"></div>
     </>
   );
 }

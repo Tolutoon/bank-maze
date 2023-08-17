@@ -38,6 +38,7 @@ li {
 li .link {
     color: gray;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 li .link:hover{
@@ -65,6 +66,7 @@ li .link:hover{
     border: 1px solid #393939;
     background-color: #fff;
     font-size: 12px;
+    transition: 0.3s;
     &:hover{
         opacity: 50%;
     }
@@ -78,6 +80,7 @@ li .link:hover{
     align-items: center;
     gap: 10px;
     border: none;
+    transition: 0.3s;
     border-radius: 4px;
     background: #F6FD89;
     margin: 16px;
@@ -85,7 +88,7 @@ li .link:hover{
     font-weight: 700;
     cursor: pointer;
     &:hover{
-        opacity: 80%;
+        color: rgb(91, 91, 91);
 }
 
 }

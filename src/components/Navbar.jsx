@@ -1,9 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
+import { useNavigate } from "react-router-dom";
 import Logo from "../assets/logo.svg";
 
 function Navbar() {
+
+    const navigate = useNavigate();
+
+    function handleLogin(){
+        navigate('/login')
+    }
+
+    function handleSign() {
+        navigate('/signup')
+    }
   return (
     <nav className="navbar">
       <div>
@@ -27,8 +38,8 @@ function Navbar() {
           </ul>
         </div>
         <div className="btn">
-          <button className="login-btn">Login</button>
-          <button className="signup-btn">Sign Up</button>
+          <button className="login-btn" onClick={handleLogin}>Login</button>
+          <button className="signup-btn" onClick={handleSign}>Sign Up</button>
         </div>
       </div>
     </nav>
